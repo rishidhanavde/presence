@@ -17,3 +17,16 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: Caveat
+      fonts:
+        - asset: assets/fonts/Caveat-VariableFont_wght.ttf
+
+    - family: AlumniSans
+      fonts:
+        - asset: assets/fonts/AlumniSans-Regular.ttf
+
+    - family: Lobster
+      fonts:
+        - asset: assets/fonts/Lobster-Regular.ttf
