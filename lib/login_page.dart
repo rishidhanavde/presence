@@ -9,13 +9,14 @@ class LoginPage extends StatelessWidget {
     final screenWidth = MediaQuery.sizeOf(context).width;
     bool obscureText = true;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.grey,
         body: SafeArea(
           child: Container(
             width: screenWidth,
             height: screenHeight,
-            color: Colors.amber.shade200,
+            color: Colors.grey.shade200,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -25,7 +26,7 @@ class LoginPage extends StatelessWidget {
                     fontFamily: 'Lobster',
                     fontSize: 50,
                     fontWeight: FontWeight.bold,
-                    color: Colors.amber.shade700,
+                    color: Colors.grey.shade700,
                   ),
                 ),
                 const SizedBox(height: 50),
@@ -36,11 +37,11 @@ class LoginPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextField(
-                        cursorColor: Colors.amber,
+                        cursorColor: Colors.grey,
                         decoration: InputDecoration(
                           labelText: 'Email',
-                          labelStyle: TextStyle(color: Colors.amber.shade900),
-                          fillColor: Colors.amber.shade300,
+                          labelStyle: TextStyle(color: Colors.grey.shade900),
+                          fillColor: Colors.grey.shade300,
                           filled: true,
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
@@ -51,7 +52,7 @@ class LoginPage extends StatelessWidget {
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(
-                              color: Colors.amber.shade900,
+                              color: Colors.grey.shade900,
                             ),
                           ),
                           border: OutlineInputBorder(
@@ -61,23 +62,23 @@ class LoginPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 15),
                       TextField(
-                        cursorColor: Colors.amber,
+                        cursorColor: Colors.grey,
                         obscureText: obscureText,
                         decoration: InputDecoration(
                           labelText: 'Password',
-                          labelStyle: TextStyle(color: Colors.amber.shade900),
-                          fillColor: Colors.amber.shade300,
+                          labelStyle: TextStyle(color: Colors.grey.shade900),
+                          fillColor: Colors.grey.shade300,
                           filled: true,
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: const BorderSide(
-                              color: Color.fromARGB(255, 226, 151, 0),
+                              color: Colors.grey
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10),
                             borderSide: BorderSide(
-                              color: Colors.amber.shade900,
+                              color: Colors.grey.shade900
                             ),
                           ),
                           border: OutlineInputBorder(
@@ -107,7 +108,7 @@ class LoginPage extends StatelessWidget {
                   height: 50,
                   width: screenWidth - 40,
                   decoration: BoxDecoration(
-                      color: Colors.amber,
+                      color: Colors.grey,
                       borderRadius: BorderRadius.circular(10)),
                   child: const Center(
                     child: Text(
@@ -124,7 +125,7 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 60),
                 Column(
                   children: [
-                    Text('New Here?', style: TextStyle(color: Colors.amber.shade800),),
+                    Text('New Here?', style: TextStyle(color: Colors.grey.shade800),),
                     const Text(
                         'Register',
                         style: TextStyle(

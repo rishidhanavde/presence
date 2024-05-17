@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:presence/homepage.dart';
+import 'package:presence/add_employee.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +10,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Homepage();
+    return const AddEmployee();
   }
 }
