@@ -21,7 +21,7 @@ class AddEmployee extends StatelessWidget {
                   icon: Icon(
                     Icons.adaptive.arrow_back,
                     size: 45,
-                    color: Colors.blueGrey.shade600,
+                    color: Colors.grey.shade700,
                   ),
                 ),
               ),
