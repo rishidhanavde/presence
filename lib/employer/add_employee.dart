@@ -7,9 +7,7 @@ class AddEmployee extends StatelessWidget {
   Widget build(BuildContext context) {
     // final screenHeight = MediaQuery.sizeOf(context).height;
     final screenWidth = MediaQuery.sizeOf(context).width;
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
       backgroundColor: Colors.grey.shade200,
         body: SafeArea(
           child: Stack(
@@ -17,7 +15,7 @@ class AddEmployee extends StatelessWidget {
               Container(
                 margin: const EdgeInsets.all(8),
                 child: IconButton(
-                  onPressed: () {},
+                  onPressed: () => Navigator.pop(context),
                   icon: Icon(
                     Icons.adaptive.arrow_back,
                     size: 45,
@@ -127,7 +125,6 @@ class AddEmployee extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

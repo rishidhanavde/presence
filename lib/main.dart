@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:presence/add_employee.dart';
+import 'package:presence/employer/add_employee.dart';
+import 'package:presence/employer/edit_profile.dart';
+import 'package:presence/employer/employees/employees_list.dart';
+import 'package:presence/employer/homepage.dart';
+import 'package:presence/employer/login_page.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const AddEmployee();
-  }
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    initialRoute: 'login',
+    routes: {
+      'login': (context) => const LoginPage(),
+      'homepage': (context) => const Homepage(),
+      'add employee':(context) => const AddEmployee(),
+      'edit profile':(context) => const EditProfile(),
+      'employees':(context) => const EmployeesList(),
+    },
+  ));
 }
