@@ -116,24 +116,21 @@ class Homepage extends StatelessWidget {
                 ),
               ],
             ),
-            Hero(
-              tag: 'addition',
-              child: Container(
-                margin: EdgeInsets.only(
-                  right: 10,
-                  left: screenWidth - 100,
-                  top: screenHeight * 0.30,
-                ),
-                child: InkWell(
-                  onTap: () => Navigator.pushNamed(context, 'add employee'),
-                  child: const CircleAvatar(
-                    radius: 40,
-                    backgroundColor: Colors.amber,
-                    child: Icon(
-                      Icons.add,
-                      size: 40,
-                      color: Colors.white,
-                    ),
+            Container(
+              margin: EdgeInsets.only(
+                right: 10,
+                left: screenWidth - 100,
+                top: screenHeight * 0.30,
+              ),
+              child: InkWell(
+                onTap: () => Navigator.pushNamed(context, 'add employee'),
+                child: const CircleAvatar(
+                  radius: 40,
+                  backgroundColor: Colors.amber,
+                  child: Icon(
+                    Icons.add,
+                    size: 40,
+                    color: Colors.white,
                   ),
                 ),
               ),
