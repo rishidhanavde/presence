@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
+dynamic headingFontSize;
+dynamic cardFontSize;
+
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -8,6 +11,20 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.sizeOf(context).height;
     final screenWidth = MediaQuery.sizeOf(context).width;
+    final textScale = MediaQuery.of(context).textScaleFactor;
+
+    void textScaleSetter() {
+      if (textScale == 1.0) {
+        headingFontSize = 35.0;
+        cardFontSize = 18.0;
+      } else if (textScale == 1.25) {
+        headingFontSize = 25.0;
+        cardFontSize = 15.0;
+      }
+    }
+
+    textScaleSetter();
+
     return Scaffold(
       backgroundColor: Colors.blueGrey.shade600,
       body: SafeArea(
@@ -54,14 +71,29 @@ class Homepage extends StatelessWidget {
                         margin: EdgeInsets.only(
                           left: 10,
                           top: screenHeight * 0.175,
+                          bottom: 2,
                         ),
-                        child: const Text(
-                          'Rishi\nDhanavde',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 50,
-                            fontWeight: FontWeight.bold,
-                          ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Rishi Dhanavde $textScale',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: headingFontSize,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              'Android Developer, Shree Ganesh Electrical',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: cardFontSize+2,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
@@ -80,7 +112,8 @@ class Homepage extends StatelessWidget {
                             MyCardButton(
                               titleText: 'Employees',
                               cardIcon: LucideIcons.contact,
-                              onTap: () => Navigator.pushNamed(context, 'employees'),
+                              onTap: () =>
+                                  Navigator.pushNamed(context, 'employees'),
                             ),
                             MyCardButton(
                               titleText: 'Work Calendar',
@@ -168,7 +201,10 @@ class MyCardButton extends StatelessWidget {
                 child: ListTile(
                   title: Text(
                     titleText,
-                    style: const TextStyle(fontWeight: FontWeight.w500),
+                    style: TextStyle(
+                      fontSize: cardFontSize,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),
