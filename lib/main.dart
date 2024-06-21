@@ -18,7 +18,8 @@ void main() {
       'add employee':(context) => const AddEmployee(),
       'edit profile':(context) => const EditProfile(),
       'employees':(context) => const EmployeesList(),
-      'temporary':(context) => AnimatedSearchBarPage(),
+      'temporary':(context) => Temporary(),
+      'temporary 2':(context) => AnimatedSearchBarPage(),
     },
   ));
 }
