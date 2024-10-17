@@ -78,7 +78,7 @@ class Homepage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Rishi Dhanavde $textScale',
+                              'Rishi Dhanavde',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: headingFontSize,
@@ -118,9 +118,8 @@ class Homepage extends StatelessWidget {
                             MyCardButton(
                               titleText: 'Work Calendar',
                               cardIcon: LucideIcons.calendarDays,
-                              onTap: () {
-                                print('Work Calendar Card pressed');
-                              },
+                              onTap: () =>
+                                  Navigator.pushNamed(context, 'work calendar'),
                             ),
                           ],
                         ),

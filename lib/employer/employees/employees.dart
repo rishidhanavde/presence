@@ -13,14 +13,14 @@ final List<Map<String, String>> Names = [
   {'name': 'Mukul Sardar', 'email': 'mukulsardar2@gmail.com'},
   {'name': 'Sanchit Yadav', 'email': 'sanchityadav3@gmail.com'},
   {'name': 'Rushikesh Sardar', 'email': 'rushikeshsardar4@gmail.com'},
-  {'name': 'Rishikesh Dhanavde', 'email': 'rishidhanavde5@gmail.com'},
-  {'name': 'Mukul Sardar', 'email': 'mukulsardar6@gmail.com'},
-  {'name': 'Sanchit Yadav', 'email': 'sanchityadav7@gmail.com'},
-  {'name': 'Rushikesh Sardar', 'email': 'rushikeshsardar8@gmail.com'},
-  {'name': 'Rishikesh Dhanavde', 'email': 'rishidhanavde9@gmail.com'},
-  {'name': 'Mukul Sardar', 'email': 'mukulsardar10@gmail.com'},
-  {'name': 'Sanchit Yadav', 'email': 'sanchityadav11@gmail.com'},
-  {'name': 'Rushikesh Sardar', 'email': 'rushikeshsardar12@gmail.com'},
+  {'name': 'Jay Patil', 'email': 'rishidhanavde5@gmail.com'},
+  {'name': 'Shubham Ruke', 'email': 'mukulsardar6@gmail.com'},
+  {'name': 'Omkar Patil', 'email': 'sanchityadav7@gmail.com'},
+  {'name': 'Rohit Birambole', 'email': 'rushikeshsardar8@gmail.com'},
+  {'name': 'Vinu Rathod', 'email': 'rishidhanavde9@gmail.com'},
+  {'name': 'Shubham Dawale', 'email': 'mukulsardar10@gmail.com'},
+  {'name': 'Dweep Kini', 'email': 'sanchityadav11@gmail.com'},
+  {'name': 'Jayesh Kamble', 'email': 'rushikeshsardar12@gmail.com'},
 ];
 
 class _EmployeesState extends State<Employees> {
