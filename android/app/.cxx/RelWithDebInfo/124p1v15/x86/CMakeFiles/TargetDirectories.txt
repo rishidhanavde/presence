@@ -1,0 +1,2 @@
+C:/Users/Rishikesh/FlutterProjects/presence/android/app/.cxx/RelWithDebInfo/124p1v15/x86/CMakeFiles/edit_cache.dir
+C:/Users/Rishikesh/FlutterProjects/presence/android/app/.cxx/RelWithDebInfo/124p1v15/x86/CMakeFiles/rebuild_cache.dir
